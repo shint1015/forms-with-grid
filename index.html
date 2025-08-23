@@ -28,7 +28,7 @@
                 <form id="form1">
                     <input class="input-name input-common" name="name" type="text" placeholder="Name">
                     <input class="input-email input-common" name="email" type="email" placeholder="Email">
-                    <input class="input-phone input-common" name="phone-number" type="tel" placeholder="Phone Number">
+                    <input class="input-phone input-common" name="phone-number" type="tel" placeholder="Phone Number" pattern="^\d{10}$">
 
                     <input type="submit" value="Submit">
                 </form>
@@ -88,6 +88,7 @@
                                         </select>
                                     </div>
                                     <input class="input-phone input-common" name="phone-number" type="tel" placeholder="543210987">
+                                    <input class="input-phone input-common" name="phone-number" type="tel" placeholder="543210987" pattern="^\d{10}$">
                                 </div>
                             </div>
                         </div>
@@ -167,6 +168,7 @@
                         <div class="input-zip-container common-container">
                             <label for="zip">Zip</label>
                             <input class="input-zip input-common" name="zip" type="text" placeholder="Enter Zip">
+                            <input class="input-zip input-common" name="zip" type="text" placeholder="Enter Zip" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$">
                         </div>
                         <div class="input-start-date-container common-container">
                             <label for="start-date">Start Date</label>
