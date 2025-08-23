@@ -1,0 +1,452 @@
+
+main {
+    height: 500px;
+}
+main h1 {
+    text-align: center;
+}
+/* sidebar */
+.sidebar-area {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    padding: 20px;
+    background-color: #3b3b48;
+    height: 100%;
+}
+
+.sidebar-area aside h2 {
+    font-size: 24px;
+    color: #d7d7d7;
+    padding-bottom: 2rem;
+    font-weight: normal;
+}
+
+.sidebar-area aside ul {
+    padding: 0;
+}
+
+.sidebar-area aside ul li {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.main-content {
+    font-size: 13px;
+}
+
+.paragraph_img_container {
+    float: left;
+    margin-right: 3rem;
+}
+
+img.paragraph_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.paragraph_title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+/* form 1 */
+#form1-area {
+    width: 60%;
+    margin: 1rem auto;
+    text-align: center;
+    color: white;
+    padding: 4rem;
+    background:
+    linear-gradient(rgba(51, 76, 222, 0.9), rgba(51, 76, 222, 0.9)),
+    url('./assets/images/form1.png') center / cover no-repeat;
+
+}
+
+#form1-area p {
+    font-size: 12px;
+    padding-bottom: 0.5rem;
+}
+#form1 {
+    display: grid;
+    grid-template-areas: 
+    "input-name input-email"
+    "input-phone input-phone"
+    "submit-button .";
+    gap: 0.75rem;
+}
+
+#form1 .input-common {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#form1 .input-common::placeholder {
+    opacity: 0.8;
+}
+#form1 .input-name {
+    grid-area: input-name;
+}
+#form1 .input-email {
+    grid-area: input-email;
+}
+#form1 .input-phone {
+    grid-area: input-phone;
+}
+#form1 .submit-button {
+    grid-area: submit-button;
+}
+#form1 input[type="submit"] {
+    width: 60%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    color: #334cde;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font-size: 12px;
+    background-color: white;
+}
+
+#form2-area {
+    background: #aed2ce;
+    padding: 2rem 0;
+}
+
+.form2-grid {
+    display: grid;
+    grid-template-areas: 
+    "image-area title-area title-area"
+    "image-area form-area info-area"
+    "image-area form-area info-area"
+    "image-area form-area icon-area";
+    gap: 1rem;
+    background: #f2ede7;
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.image-area {
+    grid-area: image-area;
+}
+.image-area img {
+    width: 200px;
+}
+.title-area {
+    grid-area: title-area;
+    font-family: serif;
+    font-size: 35px;
+    font-weight: lighter;
+    color: #020649;
+    align-self: flex-end;
+}
+#form2 {
+    grid-area: form-area;
+    display: grid;
+    grid-template-areas: 
+    "input-name"
+    "input-email"
+    "input-phone"
+    "submit-button";
+}
+#form2 .input-common {
+    border: none;
+    background: #f2ede7;
+    border-bottom: 2px solid #020649;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+#form2 .input-name {
+    grid-area: input-name;
+}
+#form2 .input-email {
+    grid-area: input-email;
+}
+#form2 .input-phone {
+    grid-area: input-phone;
+}
+#form2 input[type="submit"] {
+    background: #020649;
+    color: #e4e6ee;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+
+#form2 .submit-button {
+    grid-area: submit-button;
+}
+
+#form2-area .info-area {
+    grid-area: info-area;
+    font-size: 13px;
+    justify-self: center;
+    color: #020649;
+}
+
+#form2-area .info-area p {
+    padding-bottom: 1rem;
+}
+
+#form2-area .icon-area {
+    grid-area: icon-area;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.2rem;
+    align-self: flex-end;
+    text-align: center;
+    width: 50%;
+    justify-self: center;
+    margin-bottom: 1.5rem;
+}
+
+#form2-area .icon-area a img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* form 3 */
+#form3-area {
+    background: #dcdcdc;
+    padding: 1.5rem 0;
+}
+
+.form3-container {
+    background: #fff;
+    padding: 3rem;
+    margin: 3rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #bcbcbc;
+}
+
+#form3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form3-container h2 {
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.form3-container p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* implicit grid */
+#form3 .common-container {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+#form3 .common-container label {
+    font-weight: bold;
+}
+
+#form3 .right-container, #form3 .left-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    align-self: flex-start;
+}
+
+#form3 .input-common {
+    padding: 0.75rem 0.5rem;
+    background: #f7f9ff;
+    border: 1px solid #f4f6fa;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+#form3 .input-common::placeholder {
+    opacity: 0.4;
+    font-weight: bold;
+}
+
+#form3 .multi-input-phone-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#form3 .select-common select {
+    padding: 0.75rem 0.5rem;
+    background: #f7f9ff;
+    border: 1px solid #f4f6fa;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    appearance: none;
+    width: 100%;
+}
+
+#form3 .select-common {
+  position: relative;
+  display: inline-block;
+}
+
+#form3 .select-common::after {
+    content: '^';
+    position: absolute;
+    top: 18%;
+    right: 10px;
+    pointer-events: none;
+    font-size: 15px;
+    color: #111;
+    transform: scale(-1.5, -1);
+    font-weight: bold;
+}
+
+#form3 .select-common.select-phone::after{
+    width: 7px;
+}
+
+#form3 .textarea-common {
+    padding: 0.75rem 0.5rem;
+    background: #f7f9ff;
+    border: 1px solid #f4f6fa;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    resize: none;
+}
+
+#form3 button.submit-button[type="submit"] {
+    background: #3883f3;
+    padding: 0.5rem 0.75rem;
+    width: 50%;
+    border: none;
+    color: #ffffff;
+    justify-self: self-end;
+    border-radius: 5px;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.submit-button svg {
+    justify-self: end;
+}
+
+.submit-button div {
+    align-self: center;
+    justify-self: center;
+}
+
+#form4-area {
+    background: #efefef;
+    padding: 2rem;
+}
+
+.form4-container {
+    background: #fcfcfc;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #e9dfe0;
+    border-radius: 10px;
+}
+
+.form4-container h2 {
+    font-size: 19px;
+    margin-bottom: 1rem;
+}
+
+form#form4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#form4 .common-container {
+    display: grid;
+    row-gap: 0.25rem;
+}
+
+#form4 .common-container label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form#form4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+}
+
+#form4 .enter-address-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#form4 .input-common {
+    padding: 0.1rem 0.75rem;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+}
+
+#form4 .input-enter-address {
+    resize: none;
+    border-radius: 3px;
+}
+
+#form4 .select-common select {
+    border: 1px solid #d7d7d7;
+    padding: 0.1rem 0.75rem;
+    appearance: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#form4 .select-common {
+  position: relative;
+  display: inline-block;
+}
+
+#form4 .select-common::after {
+    content: '^';
+    position: absolute;
+    top: 0%;
+    right: 10px;
+    pointer-events: none;
+    font-size: 15px;
+    color: #111;
+    transform: scale(-1.8, -1);
+}
+
+#form4 input[type="submit"] {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 45%;
+    background: #1b52e0;
+    color: #fff;
+    border: none;
+    justify-self: flex-end;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+}
+
+input[type="submit"] {
+    transition:
+        width 2s,
+        height 2s,
+        background-color 2s,
+        rotate 2s;
+}
+
+input[type="submit"]:hover {
+    rotate: 180deg;
+    background-color: gold;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./common.css">
+        <link rel="stylesheet" href="./index.css">
+        <title>Home - Nav Example</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="logo" href="./index.html">
+                    <img src="./assets/logo/birdlogo3.png" alt="Logo">
+                </a>
+                <ul>
+                    <li><a id="current-page" href="#" class="navlink">Home</a></li>
+                    <li><a href="./pages/about.html" class="navlink">About</a></li>
+                    <li><a href="./pages/services.html" class="navlink">Services</a></li>
+                    <li><a href="./pages/contact.html" class="navlink">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="form1-area">
+                <h2>Connect With Our Team</h2>
+                <p>Fill the form so that our team can reach out to you</p>
+                <form id="form1">
+                    <input class="input-name input-common" name="name" type="text" placeholder="Name">
+                    <input class="input-email input-common" name="email" type="email" placeholder="Email">
+                    <input class="input-phone input-common" name="phone-number" type="tel" placeholder="Phone Number">
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="form2-area">
+                <div class="form2-grid">
+                    <div class="image-area">
+                        <img src="./assets/images/form2.png" alt="Contact Us">
+                    </div>
+                    <h2 class="title-area">Contact Us</h2>
+                    <form id="form2">
+                        <input class="input-name input-common" name="name" type="text" placeholder="Full Name">
+                        <input class="input-email input-common" name="email" type="email" placeholder="Email">
+                        <input class="input-message input-common" name="message" placeholder="Message">
+                        <input class="submit-button" type="submit" value="Contact Us">
+                    </form>
+                    <div class="info-area">
+                        <h3>Contact</h3>
+                        <p>hi@green.com</p>
+                        <h3>Based in</h3>
+                        <p>
+                            New York, <br>
+                            California, Ohio
+                        </p>
+                    </div>
+                    <div class="icon-area">
+                        <a href="#"><img src="./assets/images/Facebook - Negative.png" alt="Facebook"></a>
+                        <a href="#"><img src="./assets/images/Twitter - Negative.png" alt="Twitter"></a>
+                        <a href="#"><img src="./assets/images/Instagram - Negative.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="form3-area">
+                <div class="form3-container">
+                    <h2>Book your appointment now</h2>
+                    <p>So our team can reach out to you on time</p>
+                    <form id="form3">
+                        <div class="right-container">
+                            <div class="input-name-container common-container">
+                                <label for="name">Full Name</label>
+                                <input class="input-name input-common" name="name" type="text" placeholder="eg: John Doe">
+                            </div>
+                            <div class="input-email-container common-container">
+                                <label for="email">Email</label>
+                                <input class="input-email input-common" name="email" type="email" placeholder="eg: john@email.com">
+                            </div>
+                            <div class="input-phone-container common-container">
+                                <label for="phone-number">Phone Number</label>
+                                <div class="multi-input-phone-container">
+                                    <div class="select-common select-phone">
+                                        <select name="phone-country-code">
+                                            <option value="+971">+971</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+44">+44</option>
+                                            <option value="+81">+81</option>
+                                        </select>
+                                    </div>
+                                    <input class="input-phone input-common" name="phone-number" type="tel" placeholder="543210987">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-container">
+                            <div class="input-available-date-select-container common-container">
+                                <label for="available-date">Available Date</label>
+                                <div class="select-common">
+                                    <select name="available-date">
+                                        <option value="" disabled selected>Select</option>
+                                        <option value="2024-01-01">January 1, 2024</option>
+                                        <option value="2024-01-02">January 2, 2024</option>
+                                        <option value="2024-01-03">January 3, 2024</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-message-container common-container">
+                                <label for="message">Share Your Message</label>
+                                <textarea class="textarea-common" name="message" rows="5">Message</textarea>
+                            </div>
+                        </div>
+                        <div></div>
+                        <button class="submit-button" type="submit">
+                            <div>Book Now</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                width="24" 
+                                height="24">
+                                <path d="M5 12h14"/>
+                                <path d="M13 6l6 6-6 6"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="form4-area">
+                <div class="form4-container">
+                    <h2>Job Application ( Web ) </h2>
+                    <form id="form4">
+                        <div class="input-first-name-container common-container">
+                            <label for="first-name">First Name</label>
+                            <input class="input-first-name input-common" name="first-name" type="text" placeholder="Enter First Name">
+                        </div>
+                        <div class="input-last-name-container common-container">
+                            <label for="last-name">Last Name</label>
+                            <input class="input-last-name input-common" name="last-name" type="text" placeholder="Enter Last Name">
+                        </div>
+                        <div class="input-email-container common-container">
+                            <label for="email">Email</label>
+                            <input class="input-email input-common" name="email" type="email" placeholder="Enter Email">
+                        </div>
+                        <div class="input-job-role-container common-container">
+                            <label for="job-role">Job Role</label>
+                            <div class="select-common">
+                                <select name="job-role">
+                                    <option value="frontend-developer">Frontend Developer</option>
+                                    <option value="backend-developer">Backend Developer</option>
+                                    <option value="fullstack-developer">Fullstack Developer</option>
+                                    <option value="designer">Designer</option>
+                                    <option value="product-manager">Product Manager</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="enter-address-container common-container">
+                            <label for="enter-address">Enter Address</label>
+                            <textarea class="input-enter-address input-common" rows="4" name="enter-address" placeholder=""></textarea>
+                        </div>
+                        <div class="input-city-container common-container">
+                            <label for="city">City</label>
+                            <input class="input-city input-common" name="city" type="text" placeholder="Enter City">
+                        </div>
+                        <div class="input-zip-container common-container">
+                            <label for="zip">Zip</label>
+                            <input class="input-zip input-common" name="zip" type="text" placeholder="Enter Zip">
+                        </div>
+                        <div class="input-start-date-container common-container">
+                            <label for="start-date">Start Date</label>
+                            <input class="input-start-date input-common" name="start-date" type="date">
+                        </div>
+                        <div class="input-cv-upload-container common-container">
+                            <label for="cv-upload">Upload Your CV</label>
+                            <input class="input-cv-upload" name="cv-upload" type="file">
+                        </div>
+                        <input type="submit" value="Apply Now">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="./pages/faq.html" class="navlink">FAQ</a></li>
+                    <li><a href="./pages/terms.html" class="navlink">Terms</a></li>
+                    <li><a href="./pages/policy.html" class="navlink">Policy</a></li>
+                    <li><a href="./pages/cookies.html" class="navlink">Cookies</a></li>
+                </ul>
+            </nav>
+            <div class ="separator">
+                <span></span>
+            </div>
+            <p>&copy; 2024 My Website</p>
+        </footer>
+    </body>
+</html>
